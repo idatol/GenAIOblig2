@@ -1,0 +1,121 @@
+:root {
+    --primary-green: #2d6a4f;
+    --secondary-green: #40916c;
+    --light-green: #d8f3dc;
+    --dark-green: #1b4332;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url("assets/AvlangSkog.webp") center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+    opacity: 0.8;
+    h2{
+        color: var(--text-color);
+        background-color: var(--white);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
+
+
+
+.cta {
+    background-color: var(--secondary-green);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#tjenester {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tjenester-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#kontakt {
+    background-color: var(--light-green);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
