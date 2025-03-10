@@ -96,6 +96,15 @@ article {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.seksjonBilde {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
 #kontakt {
     background-color: var(--light-green);
     padding: 50px 20px;
