@@ -5,7 +5,8 @@
     --dark-green: #1b4332;
     --background-color: #f4f4f4;
     --text-color: #333;
-    --white: #ffffff;
+    --white: #fff;
+    --black: #000;
 }
 
 body {
@@ -37,6 +38,13 @@ nav ul li a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: var(--dark-green);
+    color: var(--light-green);
 }
 
 #hero {
@@ -55,7 +63,7 @@ nav ul li a {
 
 
 
-.cta {
+#kta {
     background-color: var(--secondary-green);
     color: var(--white);
     padding: 10px 20px;
@@ -63,6 +71,11 @@ nav ul li a {
     display: inline-block;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+#kta:hover{
+    background-color: var(--dark-green);
+    color: var(--light-green);
 }
 
 #tjenester {
@@ -110,7 +123,12 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
+
+button:hover {
+    background-color: var(--secondary-green);
+} 
 
 footer {
     background-color: var(--dark-green);
