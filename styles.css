@@ -61,8 +61,6 @@ nav ul li a:hover {
     }
 }
 
-
-
 #kta {
     background-color: var(--secondary-green);
     color: var(--white);
@@ -104,6 +102,53 @@ article {
     margin-top: 10px;
 }
 
+#om-oss {
+    text-align: center;
+    padding: 5rem;
+}
+
+#om-oss-container {
+    display: flex;
+    align-items: stretch; /* Sørger for at begge elementene får lik høyde */
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 25rem;
+}
+
+#om-oss article {
+    flex: 1;
+    text-align: left;
+}
+
+#om-oss figure {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portrett {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Skjul bildet på små skjermer */
+@media (max-width: 768px) {
+    .om-oss-container {
+        flex-direction: column;
+    }
+
+    #om-oss figure {
+        display: none;
+    }
+}
+
+
 
 #kontakt {
     background-color: var(--light-green);
@@ -144,5 +189,5 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin: 0;
 }
